@@ -12,7 +12,7 @@
 
     #hero {
         height: auto;
-        background: url("./images/photos/store_mobile-30.jpg");
+        background: url("../images/photos/store_mobile-30.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
