@@ -1,0 +1,1281 @@
+/*<---          Fixing Navbar           -->*/
+.side-nav ul li:nth-of-type(3) a:hover::before {
+    width: 0%;
+}
+
+/*-- -------------------------- -->
+<---         Landing            -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0em) {
+
+    /* Gallery Page Navigation */
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+		background-color: #fff;
+    }
+
+    /* Gallery Page Content */
+
+    #hero {
+        background: url(/images/photos/banner-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        min-height: 60vh;
+    }
+
+    #hero:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: .7;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 25%;
+        color: #fff;
+        display: none;
+    }
+
+    #hero h2 {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.5em;
+        text-align: center;
+        color: #fff;/*
+        display: none;*/
+    }
+
+}
+
+@media only screen and (min-width: 48em) {
+   
+    #hero {
+        background: url(/images/photos/banner-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        min-height: 60vh;
+    }
+
+}
+
+@media only screen and (min-width: 64em) {
+    
+    /* Gallery Page Content */
+
+    #hero {
+        background: url(/images/photos/banner-shorter-comp.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 0px;
+        z-index: 1;
+        min-height: 85vh;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 200px;
+        color: #fff;
+    }
+
+    #hero {
+        
+        background-attachment: fixed;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+    
+}
+
+
+
+/*-- -------------------------- -->
+<---         Title              -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0em) {
+
+    #Title {
+        text-align: center;
+        margin: auto;
+        width: 88%;
+        overflow: hidden;
+        padding-top: 60px;
+        padding-bottom: 35px;
+    }
+    
+    #Title h2 {
+        padding: 0 20px;
+        font-size: 36px;
+        position: relative;
+        text-align: center;
+
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    #Title h2:before, #Title h2:after {
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 48%;
+        height: 2px;
+        content: '\a0';
+        background-color: #3660ab;
+    }
+
+    #Title h2:after {
+        transform: translateX(8%);
+    }
+
+    #Title h2:before {
+        margin-left: -52%;
+        text-align: right;
+    }
+
+
+    #Title hr {
+        border: none;
+        border-top: 2px solid #3660ab;
+        -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+                transform: translateY(-10px);
+                
+        display: none;
+    }
+
+    #Title p {
+        padding: 10px 0px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #Title p {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+ 
+    #Title {
+        padding: 100px 10px 100px 10px;
+    }
+
+    #Title h2 {
+        font-size: 42px;
+    }
+
+    #Title p {
+        padding: 10px 15px;
+        font-size: 22px;
+    }
+    
+}
+
+/* Landscape Tablet/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #Title {
+        padding: 125px 25px 125px 25px;
+    }
+
+    #Title h2:before, #Title h2:after {
+        height: 3px;
+    }
+
+    #Title h2 {
+        font-size: 40px;
+    }
+
+    #Title p {
+        font-size: 22px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1300px) {
+    
+}
+
+
+/*-- -------------------------- -->
+<---      gallery-gallery       -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0em) {
+
+    section#gallery-gallery {
+        margin: 0px !important;
+        padding: 0px 10px;
+    }
+
+    .wrapper-gallery {
+        margin: 0 20vw;
+    }
+
+    #gallery-gallery {
+        margin: 0 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 8px;
+        grid-template-areas:
+        "gallery-p gallery-p" 
+        "gallery-h2 gallery-h2"
+        "img2 img3"
+        "img1 img1"
+        "img4 img5"
+        "img6 img7"
+        "img8 img8"
+        "img11 img12"
+        "img13 img14"
+        "img15 img16"
+        "img15 img19"
+        "img17 img20"
+        "img21 img22"
+        "img24 img24"
+        "img25 img18"
+        "img30 img30"
+        "img29 img26"
+        "img31 img32"
+        "img33 img34"
+        "img28 img34"
+        "img35 img35" 
+        "img9 img27"
+        "img9 img23"
+        "img10 img10";
+    }
+
+    #gallery-gallery .gallery-img {
+        width: 100%;
+        height: 150px; /* HOW TALL THUMBNAILS*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+    /*  IMAGES    */
+
+    #gallery-gallery p {
+        grid-area: gallery-p;
+    }
+
+    #gallery-gallery h2 {
+        grid-area: gallery-h2;
+    }
+
+    #gallery-gallery .img1 {
+        grid-area: img1;
+        background-image: url(/images/img/thumbs/img1.jpg);
+    }
+
+    #gallery-gallery .img2 {
+        grid-area: img2;
+        background-image: url(/images/img/thumbs/img2.jpg);
+    }
+    
+    #gallery-gallery .img3 {
+        grid-area: img3;
+        background-image: url(/images/img/thumbs/img3.jpg);
+    }
+    
+    #gallery-gallery .img4 {
+        grid-area: img4;
+        background-image: url(/images/img/thumbs/img4.jpg);
+    }
+    
+    #gallery-gallery .img5 {
+        grid-area: img5;
+        background-image: url(/images/img/thumbs/img5.jpg);
+    }
+    
+    #gallery-gallery .img6 {
+        grid-area: img6;
+        background-image: url(/images/img/thumbs/img6.jpg);
+    }
+    
+    #gallery-gallery .img7 {
+        grid-area: img7;
+        background-image: url(/images/img/thumbs/img7.jpg);
+    }
+    
+    #gallery-gallery .img8 {
+        grid-area: img8;
+        background-image: url(/images/img/thumbs/img8.jpg);
+    }
+    
+    #gallery-gallery .img9 {
+        grid-area: img9;
+        background-image: url(/images/img/thumbs/img9.jpg);
+        height: 308px;
+    }
+    
+    #gallery-gallery .img10 {
+        grid-area: img10;
+        background-image: url(/images/img/thumbs/img10.jpg);
+    }
+    
+    #gallery-gallery .img11 {
+        grid-area: img11;
+        background-image: url(/images/img/thumbs/img11.jpg);
+    }
+    
+    #gallery-gallery .img12 {
+        grid-area: img12;
+        background-image: url(/images/img/thumbs/img12.jpg);
+    }
+    
+    #gallery-gallery .img13 {
+        grid-area: img13;
+        background-image: url(/images/img/thumbs/img13.jpg);
+    }
+    
+    #gallery-gallery .img14 {
+        grid-area: img14;
+        background-image: url(/images/img/thumbs/img14.jpg);
+    }
+    
+    #gallery-gallery .img15 {
+        grid-area: img15;
+        background-image: url(/images/img/thumbs/img15.jpg);
+        height: 308px;
+    }
+    
+    #gallery-gallery .img16 {
+        grid-area: img16;
+        background-image: url(/images/img/thumbs/img16.jpg);
+    }
+    
+    #gallery-gallery .img17 {
+        grid-area: img17;
+        background-image: url(/images/img/thumbs/img17.jpg);
+    }
+    
+    #gallery-gallery .img18 {
+        grid-area: img18;
+        background-image: url(/images/img/thumbs/img18.jpg);
+    }
+    
+    #gallery-gallery .img19 {
+        grid-area: img19;
+        background-image: url(/images/img/thumbs/img19.jpg);
+    }
+    
+    #gallery-gallery .img20 {
+        grid-area: img20;
+        background-image: url(/images/img/thumbs/img20.jpg);
+    }
+    
+    #gallery-gallery .img21 {
+        grid-area: img21;
+        background-image: url(/images/img/thumbs/img21.jpg);
+    }
+    
+    #gallery-gallery .img22 {
+        grid-area: img22;
+        background-image: url(/images/img/thumbs/img22.jpg);
+    }
+    
+    #gallery-gallery .img23 {
+        grid-area: img23;
+        background-image: url(/images/img/thumbs/img23.jpg);
+    }
+    
+    #gallery-gallery .img24 {
+        grid-area: img24;
+        background-image: url(/images/img/thumbs/img24.jpg);
+    }
+    
+    #gallery-gallery .img25 {
+        grid-area: img25;
+        background-image: url(/images/img/thumbs/img25.jpg);
+    }
+    
+    #gallery-gallery .img26 {
+        grid-area: img26;
+        background-image: url(/images/img/thumbs/img26.jpg);
+    }
+    
+    #gallery-gallery .img27 {
+        grid-area: img27;
+        background-image: url(/images/img/thumbs/img27.jpg);
+    }
+    
+    #gallery-gallery .img28 {
+        grid-area: img28;
+        background-image: url(/images/img/thumbs/img28.jpg);
+    }
+    
+    #gallery-gallery .img29 {
+        grid-area: img29;
+        background-image: url(/images/img/thumbs/img29.jpg);
+    }
+    
+    #gallery-gallery .img30 {
+        grid-area: img30;
+        background-image: url(/images/img/thumbs/img30.jpg);
+    }
+    
+    #gallery-gallery .img31 {
+        grid-area: img31;
+        background-image: url(/images/img/thumbs/img31.jpg);
+    }
+    
+    #gallery-gallery .img32 {
+        grid-area: img32;
+        background-image: url(/images/img/thumbs/img32.jpg);
+    }
+    
+    #gallery-gallery .img33 {
+        grid-area: img33;
+        background-image: url(/images/img/thumbs/img33.jpg);
+    }
+    
+    #gallery-gallery .img34 {
+        grid-area: img34;
+        background-image: url(/images/img/thumbs/img34.jpg);
+        height: 308px;
+    }
+    
+    #gallery-gallery .img35 {
+        grid-area: img35;
+        background-image: url(/images/img/thumbs/img35.jpg);
+    }
+
+    #gallery-gallery .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23, .img24, .img25, .img26, .img27, .img28, .img29, .img30, .img31, .img32, .img33, .img34, .img35 {
+        border-radius: 4px;
+        background-color: #dbdbdb;
+    }
+
+    #gallery-gallery .hover-effect:hover {
+        transition: all .3s ease-in-out;
+        
+        transform: scale(1.025);
+    }
+
+    /* Gallery Image Titles */
+
+    .gallery-img div {
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all ease-in-out .3s;
+    }
+
+    .gallery-img div:hover {
+        opacity: 0.15;
+        transition: all ease-in-out .3s;
+    }
+
+    /* Pop-Up Image */
+
+    .img-window {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.925);
+        position: fixed;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+
+        animation: fadeinbg .175s;
+    }
+
+    .img-window img {
+        max-height: 90vh;
+        max-width: 90vw;
+        animation: fadeinsd .175s;
+    }
+
+    /* Next Image */
+    .img-btn-next {
+        display: block;
+        padding: 12px 20px;
+        border-radius: 4px;
+        background-color: rgb(33, 33, 33);
+        position: fixed;
+        top: 89vh;
+        left: 60vw;
+        z-index: 1001;
+        color: rgb(255, 255, 240);
+        cursor: pointer;
+        text-transform: capitalize;
+        transition: all ease-in-out .15s;
+        animation: fadeinsd 1s; 
+
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .img-btn-next:hover {
+        opacity: .8;
+        color: rgba(255, 255, 240, 1);
+    }
+
+    /* Prev Image */
+    .img-btn-prev {
+        display: block;
+        padding: 12px 20px;
+        border-radius: 4px;
+        background-color: rgb(33, 33, 33);
+        position: fixed;
+        top: 89vh;
+        right: 60vw;
+        z-index: 1001;
+        color: rgb(255, 255, 240);
+        cursor: pointer;
+        text-transform: capitalize;
+
+        transition: all ease-in-out .15s;
+        animation: fadeinsd 1s; 
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .img-btn-prev:hover {
+        opacity: .8;
+        color: rgba(255, 255, 240, 1);
+    }
+
+    /* Click Button Effect */
+    
+    .img-btn-next:active {
+        transform: scale(0.92);
+        color: rgb(255, 255, 240);
+    }
+
+    .img-btn-prev:active {
+        transform: scale(0.92);
+        color: rgb(255, 255, 240);
+    }
+
+    @keyframes fadeinbg {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:0.925;
+        }
+    }
+
+    @keyframes fadeinsd {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+
+}
+
+/* Landscape Phone */ 
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+    
+    section#gallery-gallery {
+        padding: 0px 15px;
+    }
+
+    #gallery-gallery {
+        grid-template-columns: 1fr 1fr 1fr;         /*HOW MANY COLUMNS*/
+        grid-template-areas:
+        "gallery-p gallery-p gallery-p" /*HOW MANY ROWS FOR THE TEXT TO SPAN: DEFINED BY  grid-template-columns: 1fr 1fr;  */
+        "gallery-h2 gallery-h2 gallery-h2" /*HOW MANY ROWS FOR THE TEXT TO SPAN: DEFINED BY  grid-template-columns: 1fr 1fr;*/
+        "img2 img3 img4"
+        "img1 img1 img5"
+        "img6 img7 img11"
+        "img8 img8 img12"
+        "img13 img14 img19"
+        "img15 img16 img21"
+        "img15 img17 img20"
+        "img22 img24 img24"
+        "img25 img18 img29"
+        "img30 img30 img32"
+        "img26 img31 img31"
+        "img33 img34 img27"
+        "img28 img34 img23"
+        "img35 img35 img9" 
+        "img10 img10 img9";
+    }
+
+    #gallery-gallery .gallery-img {
+        height: 200px;
+    }
+    
+    /*  IMAGES    */
+
+    #gallery-gallery p {
+        grid-area: gallery-p;
+    }
+
+    #gallery-gallery h2 {
+        grid-area: gallery-h2;
+    }
+
+    #gallery-gallery .img9 {
+        height: 408px;
+    }
+    
+    #gallery-gallery .img15 {
+        height: 408px;
+    }
+    
+    #gallery-gallery .img34 {
+        grid-area: img34;
+        background-image: url(/images/img/thumbs/img34.jpg);
+        height: 408px;
+    }
+
+    /* Pop-Up Image */
+
+    .img-window img {
+        max-height: 90vh;
+        max-width: 87vw;
+        animation: fadeinsd .175s; /* TRY TO CREATE A FADE OUT ON CLICK https://stackoverflow.com/questions/13630229/can-i-have-an-onclick-effect-in-css */
+    }
+
+    /* Next Image */
+    .img-btn-next {
+        padding: 10px 12px 10px 14px;
+        top: 43vh;
+        left: 88.5vw;
+    }
+
+    /* Prev Image */
+    .img-btn-prev {
+        padding: 10px 14px 10px 12px;
+        top: 43vh;
+        right: 88.5vw;
+    }
+
+}
+
+/* Small Landscape Phone */ 
+@media only screen and (min-width: 480px) and (max-width: 631px) and (orientation: landscape) {
+
+/* Pop-Up Image */
+
+.img-window img {
+    max-height: 87vh;
+    max-width: 87vw;
+}
+
+/* Next Image */
+.img-btn-next {
+    padding: 8px;
+}
+
+/* Prev Image */
+.img-btn-prev {
+    padding: 8px;
+}
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+        
+    section#gallery-gallery {
+        padding: 0px 30px;
+    }
+
+    #gallery-gallery {
+        grid-template-columns: 1fr 1fr 1fr;         /*HOW MANY COLUMNS*/
+        grid-template-areas:
+        "gallery-p gallery-p gallery-p" /*HOW MANY ROWS FOR THE TEXT TO SPAN: DEFINED BY  grid-template-columns: 1fr 1fr;  */
+        "gallery-h2 gallery-h2 gallery-h2" /*HOW MANY ROWS FOR THE TEXT TO SPAN: DEFINED BY  grid-template-columns: 1fr 1fr;*/
+        "img2 img3 img4"
+        "img1 img1 img5"
+        "img6 img7 img11"
+        "img8 img8 img12"
+        "img13 img14 img19"
+        "img15 img16 img21"
+        "img15 img17 img20"
+        "img22 img24 img24"
+        "img25 img18 img29"
+        "img30 img30 img32"
+        "img26 img31 img31"
+        "img33 img34 img27"
+        "img28 img34 img23"
+        "img35 img35 img9" 
+        "img10 img10 img9";
+    }
+
+    #gallery-gallery .gallery-img {
+        height: 300px;
+    }
+    
+    /*  IMAGES    */
+
+    #gallery-gallery p {
+        grid-area: gallery-p;
+    }
+
+    #gallery-gallery h2 {
+        grid-area: gallery-h2;
+    }
+
+    #gallery-gallery .img9 {
+        height: 608px;
+    }
+    
+    #gallery-gallery .img15 {
+        height: 608px;
+    }
+    
+    #gallery-gallery .img34 {
+        height: 608px;
+    }
+
+    /* Pop-Up Image */
+
+    .img-window img {
+        max-height: 88vh;
+        max-width: 92vw;
+        transform: translateY(-3vh);
+    }
+
+    /* Next Image */
+    .img-btn-next {
+        padding: 12px 24px;
+        top: 92vh;
+        left: 70vw;
+        font-size: 22px;
+    }
+
+    /* Prev Image */
+    .img-btn-prev {
+        padding: 12px 24px;
+        top: 92vh;
+        right: 70vw;
+        font-size: 22px;
+    }
+
+}
+
+/* Tablet Landscape/Small Computer */
+@media only screen and (min-width: 64em) {
+
+    #gallery-gallery {
+        padding: 0 40px;
+    }
+
+    /* Pop-Up Image */
+
+    .img-window img {
+        max-height: 88vh;
+        max-width: 90vw;
+    }
+
+    /* Next Image */
+    .img-btn-next {
+        padding: 12px 22px;
+        top: 92vh;
+        left: 60vw;
+        animation: fadeinsd 1s; 
+    }
+
+    /* Prev Image */
+    .img-btn-prev {
+        padding: 12px 22px;
+        top: 92vh;
+        right: 60vw;
+        animation: fadeinsd 1s;
+    }
+    
+
+}
+
+/* Computers */
+@media only screen and (min-width: 1300px) {
+    
+    .wrapper-gallery {
+        margin: 0 20vw;
+    }
+
+    #gallery-gallery {
+        margin: 0 75px;
+        padding: 0px 75px !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 15px;
+        grid-template-areas:
+        "gallery-p gallery-p gallery-p gallery-p"
+        "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+        "img2 img1 img1 img3"
+        "img4 img5 img6 img7"
+        "img8 img8 img11 img12"
+        "img13 img14 img15 img16"
+        "img17 img19 img15 img20"
+        "img21 img22 img24 img24"
+        "img25 img30 img30 img18"
+        "img29 img26 img31 img32"
+        "img33 img34 img35 img35"
+        "img28 img34 img9 img27"
+        "img10 img10 img9 img23";
+    }
+
+    #gallery-gallery .gallery-img {
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    
+    /*  IMAGES    */
+
+    #gallery-gallery p {
+        grid-area: gallery-p;
+    }
+
+    #gallery-gallery h2 {
+        grid-area: gallery-h2;
+    }
+
+    #gallery-gallery .img1 {
+        grid-area: img1;
+        background-image: url(/images/img/thumbs/img1.jpg);
+    }
+
+    #gallery-gallery .img2 {
+        grid-area: img2;
+        background-image: url(/images/img/thumbs/img2.jpg);
+    }
+    
+    #gallery-gallery .img3 {
+        grid-area: img3;
+        background-image: url(/images/img/thumbs/img3.jpg);
+    }
+    
+    #gallery-gallery .img4 {
+        grid-area: img4;
+        background-image: url(/images/img/thumbs/img4.jpg);
+    }
+    
+    #gallery-gallery .img5 {
+        grid-area: img5;
+        background-image: url(/images/img/thumbs/img5.jpg);
+    }
+    
+    #gallery-gallery .img6 {
+        grid-area: img6;
+        background-image: url(/images/img/thumbs/img6.jpg);
+    }
+    
+    #gallery-gallery .img7 {
+        grid-area: img7;
+        background-image: url(/images/img/thumbs/img7.jpg);
+    }
+    
+    #gallery-gallery .img8 {
+        grid-area: img8;
+        background-image: url(/images/img/thumbs/img8.jpg);
+    }
+    
+    #gallery-gallery .img9 {
+        grid-area: img9;
+        background-image: url(/images/img/thumbs/img9.jpg);
+        height: 615px;
+    }
+    
+    #gallery-gallery .img10 {
+        grid-area: img10;
+        background-image: url(/images/img/thumbs/img10.jpg);
+    }
+    
+    #gallery-gallery .img11 {
+        grid-area: img11;
+        background-image: url(/images/img/thumbs/img11.jpg);
+    }
+    
+    #gallery-gallery .img12 {
+        grid-area: img12;
+        background-image: url(/images/img/thumbs/img12.jpg);
+    }
+    
+    #gallery-gallery .img13 {
+        grid-area: img13;
+        background-image: url(/images/img/thumbs/img13.jpg);
+    }
+    
+    #gallery-gallery .img14 {
+        grid-area: img14;
+        background-image: url(/images/img/thumbs/img14.jpg);
+    }
+    
+    #gallery-gallery .img15 {
+        grid-area: img15;
+        background-image: url(/images/img/thumbs/img15.jpg);
+        height: 615px;
+    }
+    
+    #gallery-gallery .img16 {
+        grid-area: img16;
+        background-image: url(/images/img/thumbs/img16.jpg);
+    }
+    
+    #gallery-gallery .img17 {
+        grid-area: img17;
+        background-image: url(/images/img/thumbs/img17.jpg);
+    }
+    
+    #gallery-gallery .img18 {
+        grid-area: img18;
+        background-image: url(/images/img/thumbs/img18.jpg);
+    }
+    
+    #gallery-gallery .img19 {
+        grid-area: img19;
+        background-image: url(/images/img/thumbs/img19.jpg);
+    }
+    
+    #gallery-gallery .img20 {
+        grid-area: img20;
+        background-image: url(/images/img/thumbs/img20.jpg);
+    }
+    
+    #gallery-gallery .img21 {
+        grid-area: img21;
+        background-image: url(/images/img/thumbs/img21.jpg);
+    }
+    
+    #gallery-gallery .img22 {
+        grid-area: img22;
+        background-image: url(/images/img/thumbs/img22.jpg);
+    }
+    
+    #gallery-gallery .img23 {
+        grid-area: img23;
+        background-image: url(/images/img/thumbs/img23.jpg);
+    }
+    
+    #gallery-gallery .img24 {
+        grid-area: img24;
+        background-image: url(/images/img/thumbs/img24.jpg);
+    }
+    
+    #gallery-gallery .img25 {
+        grid-area: img25;
+        background-image: url(/images/img/thumbs/img25.jpg);
+    }
+    
+    #gallery-gallery .img26 {
+        grid-area: img26;
+        background-image: url(/images/img/thumbs/img26.jpg);
+    }
+    
+    #gallery-gallery .img27 {
+        grid-area: img27;
+        background-image: url(/images/img/thumbs/img27.jpg);
+    }
+    
+    #gallery-gallery .img28 {
+        grid-area: img28;
+        background-image: url(/images/img/thumbs/img28.jpg);
+    }
+    
+    #gallery-gallery .img29 {
+        grid-area: img29;
+        background-image: url(/images/img/thumbs/img29.jpg);
+    }
+    
+    #gallery-gallery .img30 {
+        grid-area: img30;
+        background-image: url(/images/img/thumbs/img30.jpg);
+    }
+    
+    #gallery-gallery .img31 {
+        grid-area: img31;
+        background-image: url(/images/img/thumbs/img31.jpg);
+    }
+    
+    #gallery-gallery .img32 {
+        grid-area: img32;
+        background-image: url(/images/img/thumbs/img32.jpg);
+    }
+    
+    #gallery-gallery .img33 {
+        grid-area: img33;
+        background-image: url(/images/img/thumbs/img33.jpg);
+    }
+    
+    #gallery-gallery .img34 {
+        grid-area: img34;
+        background-image: url(/images/img/thumbs/img34.jpg);
+        height: 615px;
+    }
+    
+    #gallery-gallery .img35 {
+        grid-area: img35;
+        background-image: url(/images/img/thumbs/img35.jpg);
+    }
+
+    #gallery-gallery .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23, .img24, .img25, .img26, .img27, .img28, .img29, .img30, .img31, .img32, .img33, .img34, .img35 {
+        border-radius: 4px;
+        transition: all .3s ease-in-out;
+    }
+
+    #gallery-gallery .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover, .img7:hover, .img8:hover, .img9:hover, .img10:hover, .img11:hover, .img12:hover, .img13:hover, .img14:hover, .img15:hover, .img16:hover, .img17:hover, .img18:hover, .img19:hover, .img20:hover, .img21:hover, .img22:hover, .img23:hover, .img24:hover, .img25:hover, .img26:hover, .img27:hover, .img28:hover, .img29:hover, .img30:hover, .img31:hover, .img32:hover, .img33:hover, .img34:hover, .img35:hover {
+        transition: all .3s ease-in-out;
+        transform: scale(1.025);
+    }
+
+    /* Gallery Image Titles * /
+
+    .gallery-img div {
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all ease-in-out .3s;
+    }
+
+    .gallery-img a {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .gallery-img div:hover {
+        /*opacity: 0.7;* /
+        transition: all ease-in-out .3s;
+    }*/
+
+    /* Pop-Up Image */
+
+    .img-window {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.925);
+        position: fixed;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .img-window img {
+        max-height: 90vh;
+        max-width: 95vw;
+        transform: translateY(-4vh);/* Set to 0 for Buttons on Sides */
+    }
+
+    /* Next Image */
+    .img-btn-next {
+        display: block;
+        padding: 12px 20px;
+        border-radius: 4px;
+        background-color: rgb(33, 33, 33);
+        position: fixed;/* Buttons on Sides
+        top: 48vh;
+        left: 90vw;*/
+        z-index: 500;
+        transition: all ease-in-out .15s;
+    }
+
+    .img-btn-next:hover {
+        opacity: .8;
+    }
+
+    /* Prev Image */
+    .img-btn-prev {
+        display: block;
+        padding: 12px 20px;
+        border-radius: 4px;
+        background-color: rgb(33, 33, 33);
+        position: fixed;/*  Buttons on Sides
+        top: 48vh;
+        right: 90vw;*/
+        z-index: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        cursor: pointer;
+        text-transform: capitalize;
+        transition: all ease-in-out .15s;
+    }
+
+}
+
+
+/*-- -------------------------- -->
+<---        CTA                 -->
+--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+
+    #cta {
+        text-align: center;
+    }
+
+    #cta h2 {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 16px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #cta p {
+        font-size: 17px;
+        line-height: 1.5em;
+        margin-bottom: 24px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*Galaxy Fold*/
+@media only screen and (min-width: 0px) and (max-width: 299px) {
+
+    #cta p {
+        padding-left: 5px;
+        padding-right: 5px;
+    }    
+
+}
+
+/*Tablet*/
+@media only screen and (min-width: 48em) {
+
+    #cta {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    #cta h2 {
+        font-size: 42px;
+    }
+
+    #cta p {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Computer Small/Lanscape Tablet*/
+@media only screen and (min-width: 1024px) {
+    #cta {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    #cta .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+    }
+
+    #cta h2 {
+        font-size: 44px;
+        text-align: left;
+        width: 65vw;
+        max-width: 43vw;
+        margin-left: 5.1635vw;
+        margin-right: auto;
+    }
+
+    #cta p {
+        font-size: 24px;
+        text-align: left;
+        width: 65vw;
+        max-width: 43vw;
+        margin-left: 5.1635vw;
+    }
+    
+    #cta .cta-button {
+        max-width: 45vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-right: 5.1635vw;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+    #cta h2 {
+        margin-left: 0;
+    }
+
+    #cta p {
+        margin-left: 0;
+    }
+
+    #cta .cta-button {
+        margin-right: 0px;
+    }
+}

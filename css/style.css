@@ -1,0 +1,1525 @@
+/*<---          Fixing Navbar           -->*/
+.side-nav ul li:nth-of-type(1) a:hover::before {
+    width: 0%;
+}
+
+/*-- -------------------------- -->
+<---          Landing           -->
+--- -------------------------- -*/
+
+
+@media only screen and (min-width: 0px) {
+
+    #hero {
+        height: auto;
+        background: url("/images/photos/store_mobile-30.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        min-height: 90vh;
+        /*width: 100vw;*//*MAYBE THIS COULD HELP*/
+        z-index: 1;
+        text-align: center;
+        border: none;
+        outline: none; 
+    }
+
+    #dark {
+        position: absolute;
+        background: #000;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: .7;
+        z-index: -1;
+    }
+
+    .hero-content {
+        margin-top: 80px; /*was 80*/
+    }
+    
+    .heroText {
+        max-width: 400px;
+        margin: auto;
+        /*margin-top: 40px;  /*was 50*/
+    }
+
+    #home-h {
+        color: #fff;
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .heroText h2 a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+        line-height: 1.5em;
+        text-decoration: none;
+        display: block;
+        width: 250px;
+        margin: auto;
+    }
+    
+    #home-p {
+        color: #fff;
+        font-size: 1em;
+        font-weight: normal;
+        width: 100%;
+        line-height: 1.6em;
+        text-align: center;
+    }
+    
+    /*.heroText button {
+        width: 100%;
+        height: 55px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }*/
+
+    .heroText a {
+        display: block;
+        width: 200px;
+        margin: auto;
+    }
+    
+    .heroText .button-solid {
+        margin-bottom: 10px;
+        position: relative;/*GROWING UNDERLINE*/
+    }
+
+    .heroText .button-solid:before {/*GROWING UNDERLINE*/
+        content: '';
+        position: absolute;
+        display: block;
+        height: 2px;
+        width: 0%;
+        background: #f0ffff;
+        opacity: 1;
+        bottom: 0;
+        left: 0;
+        -webkit-transition: .5s ease;
+        -o-transition: .5s ease;
+        transition: .5s ease;
+    }
+
+    .button-solid:hover:before {/*GROWING UNDERLINE*/
+        width: 100%;
+        -webkit-transition: .5s ease;
+        -o-transition: .5s ease;
+        transition: .5s ease;
+    }
+
+
+    .heroText .button-transparent {
+        border: none;
+        position: relative;/*GROWING UNDERLINE*/
+    }
+
+    .heroText .button-transparent:before {/*GROWING UNDERLINE*/
+        content: '';
+        position: absolute;
+        display: block;
+        height: 2px;
+        width: 0%;
+        background: #f0ffff;
+        opacity: 1;
+        bottom: 0;
+        left: 0;
+        -webkit-transition: .5s ease;
+        -o-transition: .5s ease;
+        transition: .5s ease;
+    }
+
+    .heroText .button-transparent:hover:before {/*GROWING UNDERLINE*/
+        width: 100%;
+        -webkit-transition: .5s ease;
+        -o-transition: .5s ease;
+        transition: .5s ease;
+    }
+
+    #hero-phone-number-h2 {
+        display: contents;
+        margin-top: 8px;
+    }
+
+    #hero { /*Pulls product cards up enough to see sliver on initial phone view */
+        margin-bottom: -30px;
+    }
+}
+
+/*Small Phones*/
+@media only screen and (min-height: 500px) and (max-height: 600px) {
+    #hero .hero-content {
+        margin-top: 20px;
+    }
+
+    #hero .heroText {
+        -webkit-transform: scale(.9);
+            -ms-transform: scale(.9);
+                transform: scale(.9);
+    }
+}
+
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #hero {
+        height: auto;
+        min-height: 500px;
+        background: url("/images/photos/landscape_store_mobile_landscape.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        min-height: 90vh;
+        /*width: 100vw;*//*MAYBE THIS COULD HELP*/
+        z-index: 1;
+        text-align: center;
+        border: none;
+        outline: none; 
+    }
+
+    #hero .hero-content {
+        margin-top: 20px;
+    }
+
+    #hero h1 {
+        width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    #hero h2 {
+        width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #hero-phone-number-h2 {
+        display: contents;
+        margin-top: 8px;
+    }
+
+    #hero .button-solid {
+        -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+
+    #hero .button-transparent {
+        -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+}
+
+@media only screen and (min-width: 48em) {
+
+    #hero {
+        height: auto;
+        background: url("/images/photos/landscape_store_wr_tablet.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #hero-phone-number-container {
+        width: 250px;
+        top: 15px;
+    }
+
+    #hero-phone-number {
+        font-size: 28px;
+    }
+
+    #hero-phone-number-h2 {
+        display: contents;
+        margin-top: 8px;
+    }
+
+    .heroText {
+        max-width: 70%;
+    }
+
+	#hero h1 {
+		font-size: 56px;
+		margin-top: 130px;
+	}
+
+	#hero h2 a {
+		width: 80%;
+		font-size: 26px;
+	}
+    
+}
+
+@media only screen and (min-width: 1024px) {
+
+    #hero {
+        height: auto;
+        background: url("/images/photos/landscape_store_wr.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .hero-content {
+        margin-top: 0px;
+        width: 1000px;
+    }
+
+    #home-h {
+        color: #fff;
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        margin-top: 100px;
+    }
+
+    #hero h2 {
+        margin-bottom: 30px;
+    }
+
+    #hero-phone-number-container {
+        position: absolute;
+        display: none;
+    }
+
+    #hero-phone-number {
+        display: none;
+    }
+
+    #hero-phone-number-h2 {
+        display: contents;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+    #hero {
+        height: auto;
+        background: url("/images/photos/landscape_store_1300_lr.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-height: 926px;
+    }
+
+    #hero h1 {
+        margin-top: 110px;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---          Products          -->
+--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+    #products {
+        position: relative;
+        z-index: 100;
+        height: 1180px;
+    }
+    
+    #products .floating-cards {
+        width: 90%;
+        background: var(--primary);
+        margin: auto;
+        -webkit-transform: translateY(-51px);
+            -ms-transform: translateY(-51px);
+                transform: translateY(-51px);
+        border-radius: 5px;
+        background-color: inherit;
+        overflow: visible;
+    }
+
+    #products .floating-cards .card {
+        padding: 10px 10px;
+    }
+    
+    #products .floating-cards .card img{
+        display: block;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-clip-path: circle();
+                clip-path: circle();
+        width: 200px;
+        height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }    
+
+    #products .floating-cards .card h3 {
+        color: #eaf0f7;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    #products .floating-cards .card:nth-of-type(1) h3{
+        color: #e3e8ee;
+    }
+
+    #products .floating-cards .card:nth-of-type(4) h3{
+        color: #e3e8ee;
+    }
+
+    #products .floating-cards .card p {
+        color: #dae6fa; /*#c6d1e1*/
+        font-size: 20px;
+        line-height: 1em;
+        margin-bottom:5px;
+        text-align: center;
+    }
+
+    #products .floating-cards .card a {
+        color: #dfe7f5;
+        text-decoration: none;
+        font-size: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    #products .floating-cards .card a img{
+        margin-left: 8px;
+    }
+
+    #products .floating-cards .card:nth-of-type(1){
+        background: #6585bb;
+        border-radius: 5px;
+    }
+
+    #products .floating-cards .card:nth-of-type(2){
+        background: #30579b;
+        border-radius: 5px;
+    }
+
+    #products .floating-cards .card:nth-of-type(3){
+        background: #6585bb;
+        border-radius: 5px;
+    }
+
+    #products .floating-cards .card:nth-of-type(4){
+        background: #30579b;
+        border-radius: 5px;
+    }
+
+    #products .floating-cards a img{
+        display: inline-block;
+        width: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 333px) {
+    
+    #products {
+        margin-bottom: 0px;
+    }
+
+}    
+
+/* Landscape Phone */    /*OPTIONS*/
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #products {
+        height: 1150px;
+    }
+
+    /* WINNER OPTION 2: CARDS IN A SQUARE */
+
+    #products {
+        position: relative;
+        height: 700px;
+    }
+
+    #products .floating-cards .card h3 {
+        font-size: 24px;  
+    }
+
+    #products .floating-cards .card p {
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%; 
+    }
+
+    #products .floating-cards {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    #products .floating-cards .card {
+        width: 50%;
+    }
+
+    #products .floating-cards .card:nth-of-type(1){
+        background: #6585bb;
+        border-radius: 5px 5px 0px 5px;
+        -webkit-transform: translateY(0.25px);
+            -ms-transform: translateY(0.25px);
+                transform: translateY(0.25px);
+    }
+
+    #products .floating-cards .card:nth-of-type(2){
+        background: #30579b;
+        border-radius: 5px 5px 5px 0px;
+        -webkit-transform: translateY(0.25px);
+            -ms-transform: translateY(0.25px);
+                transform: translateY(0.25px);
+    }
+
+    #products .floating-cards .card:nth-of-type(3){
+        background: #30579b; 
+        border-radius: 5px 0px 5px 5px;
+    }
+
+    #products .floating-cards .card:nth-of-type(4){
+        background: #6585bb;
+        border-radius: 0px 5px 5px 5px;
+    }
+
+}
+
+/*Tablet*/
+@media only screen and (min-width: 48em) {
+
+    #products {
+        position: relative;
+        height: 650px;
+    }
+
+    #products .floating-cards .card h3 {
+        font-size: 24px; 
+    }
+
+    #products .floating-cards .card p {
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%; 
+    }
+
+    #products .floating-cards {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    #products .floating-cards .card {
+        width: 50%;
+    }
+    
+    #products .floating-cards .card:nth-of-type(1){
+        background: #6585bb;
+        border-radius: 5px 5px 0px 5px;
+        -webkit-transform: translateY(0.25px);
+            -ms-transform: translateY(0.25px);
+                transform: translateY(0.25px);
+    }
+
+    #products .floating-cards .card:nth-of-type(2){
+        background: #30579b;
+        border-radius: 5px 5px 5px 0px;
+        -webkit-transform: translateY(0.25px);
+            -ms-transform: translateY(0.25px);
+                transform: translateY(0.25px);
+    }
+
+
+    #products .floating-cards .card:nth-of-type(3){
+        background: #30579b; 
+        border-radius: 5px 0px 5px 5px;
+    }
+
+    #products .floating-cards .card:nth-of-type(4){
+        background: #6585bb;
+        border-radius: 0px 5px 5px 5px;
+    }
+
+}
+
+/*Computer Small/Lanscape Tablet*/    /*OPTIONS*/
+@media only screen and (min-width: 1024px) {    
+
+    /*CARDS IN A LINE */
+    #products .floating-cards .card h3 {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    #products .floating-cards .card p {
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        line-height: 1em;
+        margin-bottom: 5px;
+    }
+
+    #products {
+        position: relative;
+        height: 350px;
+    }
+
+    #products .floating-cards {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 95%;
+        -webkit-transform: translateY(-120px);
+            -ms-transform: translateY(-120px);
+                transform: translateY(-120px);
+    }
+
+    #products .floating-cards .card {
+        width: 25%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #products .floating-cards .card:nth-of-type(1){
+        background: #6585bb;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    #products .floating-cards .card:nth-of-type(2){
+        background: #30579b;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    #products .floating-cards .card:nth-of-type(3){
+        background: #6585bb; 
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    #products .floating-cards .card:nth-of-type(4){
+        background: #30579b;
+        border-radius: 5px 5px 5px 5px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    
+    #products .floating-cards .card h3 {
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+}
+
+@media only screen and (min-width: 1800px) {
+    
+    #products .floating-cards {
+        width: 100%;
+        -webkit-transform: translateY(-120px);
+            -ms-transform: translateY(-120px);
+                transform: translateY(-120px);
+    }
+
+}
+
+/*-- -------------------------- -->
+<---          About             -->
+--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+    #about {
+        text-align: center;
+        margin: auto;
+        width: 88%;
+        overflow: hidden;
+        padding-top: 60px;
+        padding-bottom: 35px;
+    }
+    
+    #about h2 {
+        padding: 0 20px;
+        font-size: 36px;
+        font-family: "Roboto-Bold", sans-serif;
+        position: relative;
+        text-align: center;
+    }
+
+    #about hr {
+        border: none;
+        border-top: 2px solid #3660ab;
+        -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+                transform: translateY(-10px); 
+    }
+
+    #about p {
+        padding: 10px 0px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 330px) {
+
+    #about {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 390px) {
+    #about {
+        padding-top: 10px;
+    }
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #about p {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+}
+
+/*Tablet*/
+@media only screen and (min-width: 48em) {
+
+    #about {
+        padding-top: 20px;
+    }
+
+    #about h2 {
+        font-size: 42px;
+        font-weight: 800;
+    }
+
+    #about hr {
+        border: none;
+        border-top: 3px solid #3660ab;
+        -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+                transform: translateY(-10px); 
+    }
+
+    #about p {
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Computer Small/Lanscape Tablet*/
+@media only screen and (min-width: 1024px) {
+   
+    #about {
+        padding-top: 40px;
+    }
+
+    #about h2 {
+        font-size: 48px;
+    }
+
+    #about p {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+    
+}
+
+/*-- -------------------------- -->
+<---          Zeph 2:3 Quote    -->
+--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+    #zeph {
+        padding-top: 10px;
+    }
+
+    #zeph h3 {
+        font-size: 18px;
+    }
+
+    #zeph .blockquote-card {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        position: relative;
+        margin: auto;
+        width: 70%;
+        text-align: center;
+        z-index: 1;
+        font-family: "Roboto-Bold", sans-serif;
+    }
+
+    #zeph .blockquote-card:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 130%;
+        width: 115%;
+        background: #6585bb;
+        opacity: 0.7;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        right: -20px;
+        z-index: -1;
+        border-radius: 5px;
+    }
+
+
+    #zeph .cite{
+        margin-left: 40%;
+        font-family: "Roboto-Bold", sans-serif;
+    }
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #zeph {
+        padding-bottom: 30px;
+    }
+
+    #zeph h3 {
+        font-size: 20px;
+    }
+
+    #zeph .blockquote-card:before {
+        width: 110%;
+        right: -25px;
+    }
+
+    #zeph .cite{
+        font-family: "Roboto-Bold", sans-serif;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 48em) {
+
+    #zeph {
+        padding-top: 10px;
+    }
+    
+    #zeph h3 {
+        font-size: 22px;
+    }
+
+    #zeph .blockquote-card {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        position: relative;
+        margin: auto;
+        width: 60%;
+        text-align: center;
+        z-index: 1;
+        font-family: "Roboto-Bold", sans-serif;
+    }
+    
+    #zeph .blockquote-card:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 130%;
+        width: 115%;
+        background: #6585bb;
+        opacity: 0.7;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        right: -35px;
+        z-index: -1;
+        border-radius: 5px;
+    }
+
+    #zeph .cite{
+        margin-left: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Computer Small/Lanscape Tablet*/
+@media only screen and (min-width: 1024px) {
+    #zeph {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    
+    #zeph h3 {
+        font-size: 24px;
+    }
+    
+    #zeph .blockquote-card {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        position: relative;
+        margin: auto;
+        width: 47%;
+        text-align: center;
+        z-index: 1;
+        font-family: "Roboto-Bold", sans-serif;
+    }
+
+    #zeph .blockquote-card:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 130%;
+        width: 113%;
+        background: #6585bb;
+        opacity: 0.7;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        /*right: ;-35px;*/
+        z-index: -1;
+        border-radius: 5px;
+    }
+
+
+    #zeph .cite{
+        margin-left: 50%;
+    } 
+}
+
+@media only screen and (min-width: 1300px) {
+  
+    #zeph .blockquote-card {
+        width: 42%;
+    }
+
+}
+
+
+/*-- -------------------------- -->
+<---          Gallery          -->
+--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+    #gallery {
+        text-align: center;
+        margin:auto;
+        width: 88%;
+        overflow: hidden;
+        padding-top: 0px;
+        padding-bottom: 35px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Tablet*/
+@media only screen and (min-width: 48em) {
+
+}
+
+/*Computer Small/Lanscape Tablet*/
+@media only screen and (min-width: 1024px) {
+    #gallery {
+        text-align: center;
+        margin:auto;
+        width: 88%;
+        overflow: hidden;
+        padding-top: 0px;
+        padding-bottom: 70px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    
+}
+
+/*-- -------------------------- -->
+<---         Testimonials       -->
+--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+    #reviews {
+        background: url("/images/spb_mobile_15.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+    }
+
+    #reviews:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: .8;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    #reviews h2 {
+        color: #fff;
+        font-size: 36px;
+        line-height: 44px;
+        font-family: "Roboto-Bold", sans-serif;
+        width: 90vw;
+        max-width: 406px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #reviews p {
+        font-size: 17px;
+        line-height: 1.5em;
+    }
+
+    #reviews .top {
+        margin-bottom: 50px;
+    }
+
+    #reviews .ratings {
+        max-width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #reviews .ratings .stars {
+        background: #fff;
+        height: 51px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0 24px;
+        border-radius: 26px;
+        margin-bottom: 16px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #reviews .ratings .stars span {
+        font-size: 18px;
+        color: #50526F
+    }
+
+    #reviews .ratings .facebook-link {
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+
+    #reviews .ratings .facebook-link a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    #reviews .ratings .stars img {
+        display: inline-block;
+        width: 24px;
+    }
+
+    #reviews .review-top .star-group img {
+        display: inline-block;
+        width: 18px;
+    }
+
+    #reviews .review {
+        background: #fff;
+        padding: 36px 20px;
+        margin-bottom: 40px;
+        width: 87vw;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #reviews .review-top {
+        position: relative;
+        padding-left: 52px;
+    }
+
+    #reviews .review-top .picture {
+        position: absolute;
+        left: 0;
+        top: 0px;
+    }
+
+    #reviews .review .name {
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    #reviews .review-top .value {
+        font-size: 18px;
+        color: #000;
+        margin-top: 2px;
+        margin-left: 8px;
+    }
+    
+    #reviews .review-top .star-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 24px;
+    }
+
+    #reviews .review-top .star-group img {
+        margin-right: 3px;
+        display: inline-block;
+    }
+
+    #reviews .review-top .star-group img:last-of-type {
+        margin-right: 0;
+    }
+    
+}
+
+/*Galaxy Fold*/
+@media only screen and (min-width: 0px) and (max-width: 299px) {
+
+    #reviews .ratings {
+        max-width: 90vw;
+    }
+
+}
+
+/* Landscape Phone */
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+
+    #reviews .review {
+        background: #fff;
+        padding: 36px 20px;
+        margin-bottom: 40px;
+        width: 60vw;
+        max-width: none;/*360px;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+}
+
+/*Tablet*/
+@media only screen and (min-width: 48em) {
+
+    #reviews {
+        background: url("/images/spb3_tablet.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+    }
+
+    #reviews .review {
+        background: #fff;
+        padding: 36px 20px;
+        margin-bottom: 40px;
+        width: 60vw;
+        max-width: none;/*360px;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #reviews h2 {
+        font-size: 42px;
+        width: 65vw;
+        max-width: 65vw;
+    }
+
+    #reviews p {
+        font-size: 22px;
+    }
+
+    #reviews .ratings {
+        max-width: 45vw;
+    }
+
+    #reviews .ratings .stars {
+        max-width: 45vw;
+    }
+
+    #reviews .ratings .stars span {
+        font-size: 22px;
+    }
+
+    #reviews .ratings .facebook-link {
+        font-size: 22px;
+    }
+
+    #reviews .review-top .star-group img {
+        width: 30px;
+        padding-left: 5px;
+    }
+
+    #reviews .review .name {
+        font-size: 22px;
+        padding-left: 5px;
+    }
+
+    #reviews .review-top .value {
+        font-size: 22px;
+    }
+
+}
+
+/*Computer Small/Lanscape Tablet*/
+@media only screen and (min-width: 1024px) {
+ 
+    #reviews {
+        background: url("/images/spb3_desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 127px;
+        background-attachment: fixed;
+    }
+
+    #reviews .review {
+        background: #fff;
+        padding: 36px 20px;
+        margin-bottom: 40px;
+        width: 55vw;
+        max-width: none;/*360px;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #reviews .top {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+    }
+
+    #reviews h2 {
+        font-size: 44px;
+        text-align: left;
+        width: 65vw;
+        max-width: 43vw;
+    }
+
+    #reviews .container2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        gap: 7px;
+    }
+
+    #reviews .review {
+        margin-bottom: 0;
+        width: 340px;
+    }
+
+    #reviews p {
+        font-size: 24px;
+    }
+
+    #reviews .ratings {
+        max-width: 45vw;
+    }
+
+    #reviews .ratings .stars {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        max-width: 37vw;
+    }
+
+    #reviews .ratings .stars img {
+        display: inline-block;
+        width: 34px;
+    }
+
+    #reviews .ratings .stars span {
+        font-size: 24px;
+    }
+
+    #reviews .ratings .facebook-link {
+        font-size: 24px;
+    }
+
+    #reviews .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    #reviews .review-top .star-group img {
+        width: 32px;
+        padding-left: 5px;
+    }
+
+    #reviews .review .name {
+        font-size: 24px;
+        padding-left: 5px;
+    }
+
+    #reviews .review-top .value {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+   
+    #reviews h2 {
+        margin-left: 0;
+        margin-right: auto;
+        text-align: left;
+        max-width: 40vw;
+    }
+
+    #reviews .ratings {
+        max-width: 30vw;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    #reviews .container2 {
+        gap: 0;
+    }  
+
+    #reviews .review {
+        width: 100%;
+        max-width: 360px;
+        margin: 0;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---          coming soon    -->
+--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+@media only screen and (min-width: 1300px) {
+    
+}
+
+/*-- -------------------------- -->
+<---        CTA                 -->
+--- -------------------------- -*/
+
+@media only screen and (min-width: 0px) {
+
+    #cta {
+        text-align: center;
+    }
+
+    #cta h2 {
+        font-size: 36px;
+        line-height: 44px;
+        font-family: "Roboto-Bold", sans-serif;
+        margin-bottom: 16px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #cta p {
+        font-size: 17px;
+        line-height: 1.5em;
+        margin-bottom: 24px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*Galaxy Fold*/
+@media only screen and (min-width: 0px) and (max-width: 299px) {
+
+    #cta p {
+        padding-left: 5px;
+        padding-right: 5px;
+    }    
+
+}
+
+/*Tablet*/
+@media only screen and (min-width: 48em) {
+
+    #cta {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    #cta h2 {
+        font-size: 42px;
+    }
+
+    #cta p {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Computer Small/Lanscape Tablet*/
+@media only screen and (min-width: 1024px) {
+    #cta {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    #cta .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+    }
+
+    #cta h2 {
+        font-size: 44px;
+        text-align: left;
+        width: 65vw;
+        max-width: 43vw;
+        margin-left: 5.1635vw;
+        margin-right: auto;
+    }
+
+    #cta p {
+        font-size: 24px;
+        text-align: left;
+        width: 65vw;
+        max-width: 43vw;
+        margin-left: 5.1635vw;
+    }
+    
+    #cta .cta-button {
+        max-width: 45vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-right: 5.1635vw;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+    #cta h2 {
+        margin-left: 0;
+    }
+
+    #cta p {
+        margin-left: 0;
+    }
+
+    #cta .cta-button {
+        margin-right: 0px;
+    }
+}
