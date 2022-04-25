@@ -177,7 +177,7 @@
     #hero {
         height: auto;
         min-height: 500px;
-        background: url("/images/photos/landscape_store_mobile_landscape.jpg");
+        background: url("../images/photos/landscape_store_mobile_landscape.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -230,7 +230,7 @@
 
     #hero {
         height: auto;
-        background: url("/images/photos/landscape_store_wr_tablet.jpg");
+        background: url("../images/photos/landscape_store_wr_tablet.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -270,7 +270,7 @@
 
     #hero {
         height: auto;
-        background: url("/images/photos/landscape_store_wr.jpg");
+        background: url("../images/photos/landscape_store_wr.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -319,7 +319,7 @@
 
     #hero {
         height: auto;
-        background: url("/images/photos/landscape_store_1300_lr.jpg");
+        background: url("../images/photos/landscape_store_1300_lr.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -998,7 +998,7 @@
 
 @media only screen and (min-width: 0px) {
     #reviews {
-        background: url("/images/spb_mobile_15.jpg");
+        background: url("../images/spb_mobile_15.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1178,7 +1178,7 @@
 @media only screen and (min-width: 48em) {
 
     #reviews {
-        background: url("/images/spb3_tablet.jpg");
+        background: url("../images/spb3_tablet.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1242,7 +1242,7 @@
 @media only screen and (min-width: 1024px) {
  
     #reviews {
-        background: url("/images/spb3_desktop.jpg");
+        background: url("../images/spb3_desktop.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
