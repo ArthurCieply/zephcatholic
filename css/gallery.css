@@ -17,7 +17,7 @@
     /* Gallery Page Content */
 
     #hero {
-        background: url(/images/photos/banner-mobile.jpg);
+        background: url(../images/photos/banner-mobile.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -61,7 +61,7 @@
 @media only screen and (min-width: 48em) {
    
     #hero {
-        background: url(/images/photos/banner-mobile.jpg);
+        background: url(../images/photos/banner-mobile.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -77,7 +77,7 @@
     /* Gallery Page Content */
 
     #hero {
-        background: url(/images/photos/banner-shorter-comp.jpg);
+        background: url(../images/photos/banner-shorter-comp.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -295,180 +295,180 @@
 
     #gallery-gallery .img1 {
         grid-area: img1;
-        background-image: url(/images/img/thumbs/img1.jpg);
+        background-image: url(../images/img/thumbs/img1.jpg);
     }
 
     #gallery-gallery .img2 {
         grid-area: img2;
-        background-image: url(/images/img/thumbs/img2.jpg);
+        background-image: url(../images/img/thumbs/img2.jpg);
     }
     
     #gallery-gallery .img3 {
         grid-area: img3;
-        background-image: url(/images/img/thumbs/img3.jpg);
+        background-image: url(../images/img/thumbs/img3.jpg);
     }
     
     #gallery-gallery .img4 {
         grid-area: img4;
-        background-image: url(/images/img/thumbs/img4.jpg);
+        background-image: url(../images/img/thumbs/img4.jpg);
     }
     
     #gallery-gallery .img5 {
         grid-area: img5;
-        background-image: url(/images/img/thumbs/img5.jpg);
+        background-image: url(../images/img/thumbs/img5.jpg);
     }
     
     #gallery-gallery .img6 {
         grid-area: img6;
-        background-image: url(/images/img/thumbs/img6.jpg);
+        background-image: url(../images/img/thumbs/img6.jpg);
     }
     
     #gallery-gallery .img7 {
         grid-area: img7;
-        background-image: url(/images/img/thumbs/img7.jpg);
+        background-image: url(../images/img/thumbs/img7.jpg);
     }
     
     #gallery-gallery .img8 {
         grid-area: img8;
-        background-image: url(/images/img/thumbs/img8.jpg);
+        background-image: url(../images/img/thumbs/img8.jpg);
     }
     
     #gallery-gallery .img9 {
         grid-area: img9;
-        background-image: url(/images/img/thumbs/img9.jpg);
+        background-image: url(../images/img/thumbs/img9.jpg);
         height: 308px;
     }
     
     #gallery-gallery .img10 {
         grid-area: img10;
-        background-image: url(/images/img/thumbs/img10.jpg);
+        background-image: url(../images/img/thumbs/img10.jpg);
     }
     
     #gallery-gallery .img11 {
         grid-area: img11;
-        background-image: url(/images/img/thumbs/img11.jpg);
+        background-image: url(../images/img/thumbs/img11.jpg);
     }
     
     #gallery-gallery .img12 {
         grid-area: img12;
-        background-image: url(/images/img/thumbs/img12.jpg);
+        background-image: url(../images/img/thumbs/img12.jpg);
     }
     
     #gallery-gallery .img13 {
         grid-area: img13;
-        background-image: url(/images/img/thumbs/img13.jpg);
+        background-image: url(../images/img/thumbs/img13.jpg);
     }
     
     #gallery-gallery .img14 {
         grid-area: img14;
-        background-image: url(/images/img/thumbs/img14.jpg);
+        background-image: url(../images/img/thumbs/img14.jpg);
     }
     
     #gallery-gallery .img15 {
         grid-area: img15;
-        background-image: url(/images/img/thumbs/img15.jpg);
+        background-image: url(../images/img/thumbs/img15.jpg);
         height: 308px;
     }
     
     #gallery-gallery .img16 {
         grid-area: img16;
-        background-image: url(/images/img/thumbs/img16.jpg);
+        background-image: url(../images/img/thumbs/img16.jpg);
     }
     
     #gallery-gallery .img17 {
         grid-area: img17;
-        background-image: url(/images/img/thumbs/img17.jpg);
+        background-image: url(../images/img/thumbs/img17.jpg);
     }
     
     #gallery-gallery .img18 {
         grid-area: img18;
-        background-image: url(/images/img/thumbs/img18.jpg);
+        background-image: url(../images/img/thumbs/img18.jpg);
     }
     
     #gallery-gallery .img19 {
         grid-area: img19;
-        background-image: url(/images/img/thumbs/img19.jpg);
+        background-image: url(../images/img/thumbs/img19.jpg);
     }
     
     #gallery-gallery .img20 {
         grid-area: img20;
-        background-image: url(/images/img/thumbs/img20.jpg);
+        background-image: url(../images/img/thumbs/img20.jpg);
     }
     
     #gallery-gallery .img21 {
         grid-area: img21;
-        background-image: url(/images/img/thumbs/img21.jpg);
+        background-image: url(../images/img/thumbs/img21.jpg);
     }
     
     #gallery-gallery .img22 {
         grid-area: img22;
-        background-image: url(/images/img/thumbs/img22.jpg);
+        background-image: url(../images/img/thumbs/img22.jpg);
     }
     
     #gallery-gallery .img23 {
         grid-area: img23;
-        background-image: url(/images/img/thumbs/img23.jpg);
+        background-image: url(../images/img/thumbs/img23.jpg);
     }
     
     #gallery-gallery .img24 {
         grid-area: img24;
-        background-image: url(/images/img/thumbs/img24.jpg);
+        background-image: url(../images/img/thumbs/img24.jpg);
     }
     
     #gallery-gallery .img25 {
         grid-area: img25;
-        background-image: url(/images/img/thumbs/img25.jpg);
+        background-image: url(../images/img/thumbs/img25.jpg);
     }
     
     #gallery-gallery .img26 {
         grid-area: img26;
-        background-image: url(/images/img/thumbs/img26.jpg);
+        background-image: url(../images/img/thumbs/img26.jpg);
     }
     
     #gallery-gallery .img27 {
         grid-area: img27;
-        background-image: url(/images/img/thumbs/img27.jpg);
+        background-image: url(../images/img/thumbs/img27.jpg);
     }
     
     #gallery-gallery .img28 {
         grid-area: img28;
-        background-image: url(/images/img/thumbs/img28.jpg);
+        background-image: url(../images/img/thumbs/img28.jpg);
     }
     
     #gallery-gallery .img29 {
         grid-area: img29;
-        background-image: url(/images/img/thumbs/img29.jpg);
+        background-image: url(../images/img/thumbs/img29.jpg);
     }
     
     #gallery-gallery .img30 {
         grid-area: img30;
-        background-image: url(/images/img/thumbs/img30.jpg);
+        background-image: url(../images/img/thumbs/img30.jpg);
     }
     
     #gallery-gallery .img31 {
         grid-area: img31;
-        background-image: url(/images/img/thumbs/img31.jpg);
+        background-image: url(../images/img/thumbs/img31.jpg);
     }
     
     #gallery-gallery .img32 {
         grid-area: img32;
-        background-image: url(/images/img/thumbs/img32.jpg);
+        background-image: url(../images/img/thumbs/img32.jpg);
     }
     
     #gallery-gallery .img33 {
         grid-area: img33;
-        background-image: url(/images/img/thumbs/img33.jpg);
+        background-image: url(../images/img/thumbs/img33.jpg);
     }
     
     #gallery-gallery .img34 {
         grid-area: img34;
-        background-image: url(/images/img/thumbs/img34.jpg);
+        background-image: url(../images/img/thumbs/img34.jpg);
         height: 308px;
     }
     
     #gallery-gallery .img35 {
         grid-area: img35;
-        background-image: url(/images/img/thumbs/img35.jpg);
+        background-image: url(../images/img/thumbs/img35.jpg);
     }
 
     #gallery-gallery .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23, .img24, .img25, .img26, .img27, .img28, .img29, .img30, .img31, .img32, .img33, .img34, .img35 {
@@ -669,7 +669,7 @@
     
     #gallery-gallery .img34 {
         grid-area: img34;
-        background-image: url(/images/img/thumbs/img34.jpg);
+        background-image: url(../images/img/thumbs/img34.jpg);
         height: 408px;
     }
 
@@ -885,180 +885,180 @@
 
     #gallery-gallery .img1 {
         grid-area: img1;
-        background-image: url(/images/img/thumbs/img1.jpg);
+        background-image: url(../images/img/thumbs/img1.jpg);
     }
 
     #gallery-gallery .img2 {
         grid-area: img2;
-        background-image: url(/images/img/thumbs/img2.jpg);
+        background-image: url(../images/img/thumbs/img2.jpg);
     }
     
     #gallery-gallery .img3 {
         grid-area: img3;
-        background-image: url(/images/img/thumbs/img3.jpg);
+        background-image: url(../images/img/thumbs/img3.jpg);
     }
     
     #gallery-gallery .img4 {
         grid-area: img4;
-        background-image: url(/images/img/thumbs/img4.jpg);
+        background-image: url(../images/img/thumbs/img4.jpg);
     }
     
     #gallery-gallery .img5 {
         grid-area: img5;
-        background-image: url(/images/img/thumbs/img5.jpg);
+        background-image: url(../images/img/thumbs/img5.jpg);
     }
     
     #gallery-gallery .img6 {
         grid-area: img6;
-        background-image: url(/images/img/thumbs/img6.jpg);
+        background-image: url(../images/img/thumbs/img6.jpg);
     }
     
     #gallery-gallery .img7 {
         grid-area: img7;
-        background-image: url(/images/img/thumbs/img7.jpg);
+        background-image: url(../images/img/thumbs/img7.jpg);
     }
     
     #gallery-gallery .img8 {
         grid-area: img8;
-        background-image: url(/images/img/thumbs/img8.jpg);
+        background-image: url(../images/img/thumbs/img8.jpg);
     }
     
     #gallery-gallery .img9 {
         grid-area: img9;
-        background-image: url(/images/img/thumbs/img9.jpg);
+        background-image: url(../images/img/thumbs/img9.jpg);
         height: 615px;
     }
     
     #gallery-gallery .img10 {
         grid-area: img10;
-        background-image: url(/images/img/thumbs/img10.jpg);
+        background-image: url(../images/img/thumbs/img10.jpg);
     }
     
     #gallery-gallery .img11 {
         grid-area: img11;
-        background-image: url(/images/img/thumbs/img11.jpg);
+        background-image: url(../images/img/thumbs/img11.jpg);
     }
     
     #gallery-gallery .img12 {
         grid-area: img12;
-        background-image: url(/images/img/thumbs/img12.jpg);
+        background-image: url(../images/img/thumbs/img12.jpg);
     }
     
     #gallery-gallery .img13 {
         grid-area: img13;
-        background-image: url(/images/img/thumbs/img13.jpg);
+        background-image: url(../images/img/thumbs/img13.jpg);
     }
     
     #gallery-gallery .img14 {
         grid-area: img14;
-        background-image: url(/images/img/thumbs/img14.jpg);
+        background-image: url(../images/img/thumbs/img14.jpg);
     }
     
     #gallery-gallery .img15 {
         grid-area: img15;
-        background-image: url(/images/img/thumbs/img15.jpg);
+        background-image: url(../images/img/thumbs/img15.jpg);
         height: 615px;
     }
     
     #gallery-gallery .img16 {
         grid-area: img16;
-        background-image: url(/images/img/thumbs/img16.jpg);
+        background-image: url(../images/img/thumbs/img16.jpg);
     }
     
     #gallery-gallery .img17 {
         grid-area: img17;
-        background-image: url(/images/img/thumbs/img17.jpg);
+        background-image: url(../images/img/thumbs/img17.jpg);
     }
     
     #gallery-gallery .img18 {
         grid-area: img18;
-        background-image: url(/images/img/thumbs/img18.jpg);
+        background-image: url(../images/img/thumbs/img18.jpg);
     }
     
     #gallery-gallery .img19 {
         grid-area: img19;
-        background-image: url(/images/img/thumbs/img19.jpg);
+        background-image: url(../images/img/thumbs/img19.jpg);
     }
     
     #gallery-gallery .img20 {
         grid-area: img20;
-        background-image: url(/images/img/thumbs/img20.jpg);
+        background-image: url(../images/img/thumbs/img20.jpg);
     }
     
     #gallery-gallery .img21 {
         grid-area: img21;
-        background-image: url(/images/img/thumbs/img21.jpg);
+        background-image: url(../images/img/thumbs/img21.jpg);
     }
     
     #gallery-gallery .img22 {
         grid-area: img22;
-        background-image: url(/images/img/thumbs/img22.jpg);
+        background-image: url(../images/img/thumbs/img22.jpg);
     }
     
     #gallery-gallery .img23 {
         grid-area: img23;
-        background-image: url(/images/img/thumbs/img23.jpg);
+        background-image: url(../images/img/thumbs/img23.jpg);
     }
     
     #gallery-gallery .img24 {
         grid-area: img24;
-        background-image: url(/images/img/thumbs/img24.jpg);
+        background-image: url(../images/img/thumbs/img24.jpg);
     }
     
     #gallery-gallery .img25 {
         grid-area: img25;
-        background-image: url(/images/img/thumbs/img25.jpg);
+        background-image: url(../images/img/thumbs/img25.jpg);
     }
     
     #gallery-gallery .img26 {
         grid-area: img26;
-        background-image: url(/images/img/thumbs/img26.jpg);
+        background-image: url(../images/img/thumbs/img26.jpg);
     }
     
     #gallery-gallery .img27 {
         grid-area: img27;
-        background-image: url(/images/img/thumbs/img27.jpg);
+        background-image: url(../images/img/thumbs/img27.jpg);
     }
     
     #gallery-gallery .img28 {
         grid-area: img28;
-        background-image: url(/images/img/thumbs/img28.jpg);
+        background-image: url(../images/img/thumbs/img28.jpg);
     }
     
     #gallery-gallery .img29 {
         grid-area: img29;
-        background-image: url(/images/img/thumbs/img29.jpg);
+        background-image: url(../images/img/thumbs/img29.jpg);
     }
     
     #gallery-gallery .img30 {
         grid-area: img30;
-        background-image: url(/images/img/thumbs/img30.jpg);
+        background-image: url(../images/img/thumbs/img30.jpg);
     }
     
     #gallery-gallery .img31 {
         grid-area: img31;
-        background-image: url(/images/img/thumbs/img31.jpg);
+        background-image: url(../images/img/thumbs/img31.jpg);
     }
     
     #gallery-gallery .img32 {
         grid-area: img32;
-        background-image: url(/images/img/thumbs/img32.jpg);
+        background-image: url(../images/img/thumbs/img32.jpg);
     }
     
     #gallery-gallery .img33 {
         grid-area: img33;
-        background-image: url(/images/img/thumbs/img33.jpg);
+        background-image: url(../images/img/thumbs/img33.jpg);
     }
     
     #gallery-gallery .img34 {
         grid-area: img34;
-        background-image: url(/images/img/thumbs/img34.jpg);
+        background-image: url(../images/img/thumbs/img34.jpg);
         height: 615px;
     }
     
     #gallery-gallery .img35 {
         grid-area: img35;
-        background-image: url(/images/img/thumbs/img35.jpg);
+        background-image: url(../images/img/thumbs/img35.jpg);
     }
 
     #gallery-gallery .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23, .img24, .img25, .img26, .img27, .img28, .img29, .img30, .img31, .img32, .img33, .img34, .img35 {
