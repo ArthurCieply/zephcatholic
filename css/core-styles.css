@@ -27,7 +27,7 @@ body {
 
 
 /*	Disable Blue Highling on Link Click	*/
-a, .hamburger, .hamburger--spring {
+a, .no-highlight {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -37,7 +37,7 @@ a, .hamburger, .hamburger--spring {
 	user-select: none;
 }
 
-a:focus, .hamburger:focus, .hamburger--spring:focus {
+a:focus, .no-highlight:focus {
     outline: none !important;
 }
 
