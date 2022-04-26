@@ -26,6 +26,21 @@ body {
 }*/
 
 
+/*	Disable Blue Highling on Link Click	*/
+a {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+a:focus {
+    outline: none !important;
+}
+
 @media only screen and (min-width: 0em) {
 
 	section {
