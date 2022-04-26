@@ -571,6 +571,7 @@ a:focus, .hamburger:focus, .hamburger--spring:focus {
 	
 	.mobile-wrapper img.mobile-logo {
 		left: 7% !important;
+		width: 210px;
 	}
 
 	
@@ -666,7 +667,7 @@ a:focus, .hamburger:focus, .hamburger--spring:focus {
 		left: 6%;
 		height: auto;
         width: 270px;
-		top: 8px;
+		top: 0px;
 	}
 
 	/*navbar */
