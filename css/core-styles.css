@@ -41,6 +41,15 @@ a:focus, .hamburger:focus, .hamburger--spring:focus {
     outline: none !important;
 }
 
+/*	Allow User Selection of Text	*/
+a, p, h1, h2, h3 {
+	-webkit-touch-callout: text; 
+	  -webkit-user-select: text; 
+	   -khtml-user-select: text; 
+		 -moz-user-select: text; 
+		  -ms-user-select: text; 
+			  user-select: text; 
+}
 
 
 @media only screen and (min-width: 0em) {
