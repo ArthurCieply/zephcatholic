@@ -539,6 +539,10 @@ a:focus, .hamburger:focus, .hamburger--spring:focus {
 /* Landscape Phone */
 @media only screen and (min-width: 30em) and (max-width: 47.9375em) {
 
+	.navbar-menu {
+		height: 175vh;
+	}
+
 }
 
 /* Tablets */
