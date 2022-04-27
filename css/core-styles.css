@@ -203,6 +203,12 @@ a, p, h1, h2, h3 {
 		background: var(--primary);
 		border: none;
 	}
+
+	.button,
+	.button-transparent:active,
+	.button-solid:active {
+		transform: scale(.97) translateY(2px);
+	}
 	
 	.hamburger {
 		padding: 0;
