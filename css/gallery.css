@@ -742,6 +742,7 @@
         padding: 10px 12px 10px 14px;
         top: 43vh;
         left: 88.5vw;
+        min-width: 86px;
     }
 
     /* Prev Image */
@@ -749,6 +750,7 @@
         padding: 10px 14px 10px 12px;
         top: 43vh;
         right: 88.5vw;
+        min-width: 86px;
     }
 
 }
