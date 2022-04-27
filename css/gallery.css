@@ -144,7 +144,9 @@
     }
 
     #Title h2:after {
-        transform: translateX(8%);
+        -webkit-transform: translateX(8%);
+            -ms-transform: translateX(8%);
+                transform: translateX(8%);
     }
 
     #Title h2:before {
@@ -477,9 +479,15 @@
     }
 
     #gallery-gallery .hover-effect:hover {
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
         
-        transform: scale(1.025);
+        -webkit-transform: scale(1.025);
+        
+            -ms-transform: scale(1.025);
+        
+                transform: scale(1.025);
     }
 
     /* Gallery Image Titles */
@@ -489,14 +497,24 @@
         height: 100%;
         background-color: #000;
         opacity: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: all ease-in-out .3s;
+        -o-transition: all ease-in-out .3s;
         transition: all ease-in-out .3s;
     }
 
     .gallery-img div:hover {
         opacity: 0.15;
+        -webkit-transition: all ease-in-out .3s;
+        -o-transition: all ease-in-out .3s;
         transition: all ease-in-out .3s;
     }
 
@@ -510,18 +528,27 @@
         top: 0;
         left: 0;
         cursor: pointer;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         z-index: 1000;
 
-        animation: fadeinbg .175s;
+        -webkit-animation: fadeinbg .175s;
+
+                animation: fadeinbg .175s;
     }
 
     .img-window img {
         max-height: 90vh;
         max-width: 90vw;
-        animation: fadeinsd .175s;
+        -webkit-animation: fadeinsd .175s;
+                animation: fadeinsd .175s;
     }
 
     /* Next Image */
@@ -537,13 +564,15 @@
         color: rgb(255, 255, 240);
         cursor: pointer;
         text-transform: capitalize;
+        -webkit-transition: all ease-in-out .15s;
+        -o-transition: all ease-in-out .15s;
         transition: all ease-in-out .15s;
-        animation: fadeinsd 1s; 
+        -webkit-animation: fadeinsd 1s;
+                animation: fadeinsd 1s; 
 
         -webkit-tap-highlight-color: transparent;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
-        -khtml-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
@@ -568,12 +597,16 @@
         cursor: pointer;
         text-transform: capitalize;
 
+        -webkit-transition: all ease-in-out .15s;
+
+        -o-transition: all ease-in-out .15s;
+
         transition: all ease-in-out .15s;
-        animation: fadeinsd 1s; 
+        -webkit-animation: fadeinsd 1s;
+                animation: fadeinsd 1s; 
         -webkit-tap-highlight-color: transparent;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
-        -khtml-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
@@ -587,13 +620,26 @@
     /* Click Button Effect */
     
     .img-btn-next:active {
-        transform: scale(0.92);
+        -webkit-transform: scale(0.92);
+            -ms-transform: scale(0.92);
+                transform: scale(0.92);
         color: rgb(255, 255, 240);
     }
 
     .img-btn-prev:active {
-        transform: scale(0.92);
+        -webkit-transform: scale(0.92);
+            -ms-transform: scale(0.92);
+                transform: scale(0.92);
         color: rgb(255, 255, 240);
+    }
+
+    @-webkit-keyframes fadeinbg {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:0.925;
+        }
     }
 
     @keyframes fadeinbg {
@@ -602,6 +648,15 @@
         }
         to {
             opacity:0.925;
+        }
+    }
+
+    @-webkit-keyframes fadeinsd {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
         }
     }
 
@@ -678,7 +733,8 @@
     .img-window img {
         max-height: 90vh;
         max-width: 87vw;
-        animation: fadeinsd .175s; /* TRY TO CREATE A FADE OUT ON CLICK https://stackoverflow.com/questions/13630229/can-i-have-an-onclick-effect-in-css */
+        -webkit-animation: fadeinsd .175s;
+                animation: fadeinsd .175s; /* TRY TO CREATE A FADE OUT ON CLICK https://stackoverflow.com/questions/13630229/can-i-have-an-onclick-effect-in-css */
     }
 
     /* Next Image */
@@ -779,7 +835,9 @@
     .img-window img {
         max-height: 88vh;
         max-width: 92vw;
-        transform: translateY(-3vh);
+        -webkit-transform: translateY(-3vh);
+            -ms-transform: translateY(-3vh);
+                transform: translateY(-3vh);
     }
 
     /* Next Image */
@@ -819,7 +877,8 @@
         padding: 12px 22px;
         top: 92vh;
         left: 60vw;
-        animation: fadeinsd 1s; 
+        -webkit-animation: fadeinsd 1s;
+                animation: fadeinsd 1s; 
     }
 
     /* Prev Image */
@@ -827,7 +886,8 @@
         padding: 12px 22px;
         top: 92vh;
         right: 60vw;
-        animation: fadeinsd 1s;
+        -webkit-animation: fadeinsd 1s;
+                animation: fadeinsd 1s;
     }
     
 
@@ -1063,12 +1123,18 @@
 
     #gallery-gallery .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23, .img24, .img25, .img26, .img27, .img28, .img29, .img30, .img31, .img32, .img33, .img34, .img35 {
         border-radius: 4px;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
 
     #gallery-gallery .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover, .img7:hover, .img8:hover, .img9:hover, .img10:hover, .img11:hover, .img12:hover, .img13:hover, .img14:hover, .img15:hover, .img16:hover, .img17:hover, .img18:hover, .img19:hover, .img20:hover, .img21:hover, .img22:hover, .img23:hover, .img24:hover, .img25:hover, .img26:hover, .img27:hover, .img28:hover, .img29:hover, .img30:hover, .img31:hover, .img32:hover, .img33:hover, .img34:hover, .img35:hover {
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
-        transform: scale(1.025);
+        -webkit-transform: scale(1.025);
+            -ms-transform: scale(1.025);
+                transform: scale(1.025);
     }
 
     /* Gallery Image Titles * /
@@ -1106,16 +1172,24 @@
         top: 0;
         left: 0;
         cursor: pointer;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         z-index: 100;
     }
 
     .img-window img {
         max-height: 90vh;
         max-width: 95vw;
-        transform: translateY(-4vh);/* Set to 0 for Buttons on Sides */
+        -webkit-transform: translateY(-4vh);
+            -ms-transform: translateY(-4vh);
+                transform: translateY(-4vh);/* Set to 0 for Buttons on Sides */
     }
 
     /* Next Image */
@@ -1128,6 +1202,8 @@
         top: 48vh;
         left: 90vw;*/
         z-index: 500;
+        -webkit-transition: all ease-in-out .15s;
+        -o-transition: all ease-in-out .15s;
         transition: all ease-in-out .15s;
     }
 
@@ -1149,6 +1225,8 @@
         color: #fff;
         cursor: pointer;
         text-transform: capitalize;
+        -webkit-transition: all ease-in-out .15s;
+        -o-transition: all ease-in-out .15s;
         transition: all ease-in-out .15s;
     }
 
