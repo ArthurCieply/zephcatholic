@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://www.divinemercystore.org/</title>
+  <link>http://www.divinemercystore.org/</link>
+
+<item>
+     <link>https://www.divinemercystore.org/</link>
+     <title>Zephania 2:3 Divine Mercy Store | Catholic Gift &amp; Book Store | South Glens Falls, NY</title>
+     <description>Zephania 2:3 Divine Mercy Store features a wide range of high quality Catholic, Christian gifts and books, reasonably priced, with all you need to live your faith.  You are sure to find the perfect gift for those who mean the most to you.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.divinemercystore.org/html/gallery</link>
+     <title>Gallery of Products | Zephania 2:3 Divine Mercy Store | South Glens Falls, NY</title>
+     <description>Check out our wide assortment of Catholic, Christian books, inspirational items, rosaries, statues, plaques, framed pictures, devotionals, jewlry, and much more, located just minutes from Glens Falls and Saratoga Springs.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.divinemercystore.org/html/contact</link>
+     <title>Location | Zephania 2:3 Divine Mercy Store | South Glens Falls, NY | Gift &amp; Book Shop</title>
+     <description>Our convenient 17 Saratoga Ave, South Glens Falls, NY 12803 location is just minutes from downtown Glens Falls and about 25 minutes from Saratoga Springs. Open Monday - Saturday 9:00am - 5:00pm.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
